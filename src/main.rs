@@ -1,14 +1,12 @@
 use std::io;
+use gtk4 as gtk;
 
 fn main() {
+
     println!("Welcome!\nPlease input a username:");
-    let mut user = String::new(); 
+    let mut user = String::from("user"); 
     io::stdin()
             .read_line(&mut user)
             .expect("Could not read input.");
-    outter(user);
-}
-
-fn outter(x: String) {
-    println!("User: {}", x);
+    
 }
